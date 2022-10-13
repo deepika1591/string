@@ -1,0 +1,34 @@
+Question //"1.1.1.1"
+ans  "1[.]1[.]1[.]1"
+
+
+
+import java.lang.*;
+import java.util.*;
+
+public class Main{
+     public static void main(String[]args){
+       Scanner sc= new Scanner(System.in);
+       String address= sc.next();
+       String ne = "";
+       ne=address.replace(".","$");
+       System.out.print(ne);
+       }
+       }
+       
+Input: command = "G()()()()(al)"
+Output: "Gooooal"
+
+import java.lang.*;
+import java.util.*;
+
+public class Main{
+     public static void main(String[]args){
+       Scanner sc= new Scanner(System.in);
+       String address= sc.next();
+       String ne = "";
+       ne=address.replace("()","o").replace("(al)","al");
+       
+       System.out.print(ne);
+       
+       
