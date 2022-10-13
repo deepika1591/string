@@ -1,0 +1,37 @@
+Input: s = "LOVELY"
+Output: "lovely"
+
+
+import java.lang.*;
+import java.util.*;
+
+public class Main{
+     public static void main(String[]args){
+       Scanner sc= new Scanner(System.in);
+       String str= sc.next();
+       String ne = "";
+       ne=str.toLowerCase();
+       
+       System.out.print(ne);
+       
+       
+       without library
+       
+       
+       import java.lang.*;
+import java.util.*;
+
+public class Main{
+     public static void main(String[]args){
+       Scanner sc= new Scanner(System.in);
+       String str= sc.next();
+       int N = str.length();
+       String ne = "";
+       int a;
+       char ch;
+       for(int i=0;i<N;i++){
+           a=str.charAt(i)+32;
+           ch =(char)a;
+         ne+=ch;}
+         }
+         }
