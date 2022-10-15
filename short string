@@ -1,0 +1,30 @@
+input 
+aaabbccddddd
+
+output
+a3b2c2d5
+import java.lang.*;
+import java.util.*;
+
+public class Main{
+     public static void main(String[]args){
+       Scanner sc= new Scanner(System.in);
+            String A = sc.next();
+            String B ="";
+            int N = A.length();
+            char we;
+         for(int i=0;i<N;i++){
+             int count=1;
+             we=A.charAt(i);
+             while(i<(N-1) && A.charAt(i)==A.charAt(i+1)){
+                 count++;
+                 i++;
+             }
+             B+=we;
+             if(count>1){
+             B+=count;
+             }
+          }
+       System.out.print(B); 
+     }
+}   
